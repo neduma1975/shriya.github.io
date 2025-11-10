@@ -10,6 +10,10 @@ profile:
   image_circular: true # crops the image to make it circular
 ---
 
+<a href="https://www.coca-colascholarsfoundation.org/2026-semifinalists/#2026sf" target="_blank" rel="noopener noreferrer">
+  <img src="{{ '/assets/img/ccsf_logo.svg' | relative_url }}" alt="CCSF Logo" style="height: 52px; vertical-align: middle; margin-right: 8px;">
+  2026 Coca-Cola Scholar Semifinalist
+</a>
 
 I'm a passionate student dedicated to advancing human-robot interaction, soft robotics, and accessible design. My work focuses on creating innovative solutions that bridge the gap between humans and technology, making robotics more intuitive and beneficial for society.
 
