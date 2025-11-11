@@ -51,7 +51,7 @@ EXPLR recognized outstanding student innovators as National STEM Champions, cele
 ![National STEM Champions]({{ '/assets/img/national-stem-champions.jpg' | relative_url }})
 
 - <a href="https://www.prnewswire.com/news-releases/explr-announces-top-student-innovators-named-national-stem-champions-302335311.html" target="_blank">PR Newswire</a>
-- <a href="https://www.lelezard.com/en/news-21646804.html" target="_blank">Le Lezard</a>
+- <a href="https://www.lelezard.com/en/news-21646804.html" target="_blank">Le Lézard</a>
 - <a href="https://fox40.com/business/press-releases/cision/20241218PH82954/explr-announces-top-student-innovators-named-national-stem-champions/" target="_blank">Fox40</a>
 - <a href="https://www.abc27.com/business/press-releases/cision/20241218PH82954/explr-announces-top-student-innovators-named-national-stem-champions/" target="_blank">ABC27</a>
 
