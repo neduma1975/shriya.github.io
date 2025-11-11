@@ -2,4 +2,5 @@
 jekyll based al-folio theme.
 
 ## Log
-- Playing with github actions, still..
+- Playing with github actions.
+- Deploy test
