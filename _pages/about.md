@@ -12,7 +12,7 @@ profile:
 
 <a href="https://www.instructables.com/contest/makeithome2025/" target="_blank" rel="noopener noreferrer">
     <img src="{{ '/assets/img/instructables-logo-2023.svg' | relative_url }}" alt="autocad Logo" style="height: 52px; vertical-align: middle; margin-right: 8px;">
-  Winner 'Individual: Best Physical Prototype
+  Winner(2025) - Individual: Best Physical Prototype
 </a>
 
 <a href="https://www.coca-colascholarsfoundation.org/2026-semifinalists/#2026sf" target="_blank" rel="noopener noreferrer">
