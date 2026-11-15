@@ -6,6 +6,16 @@ nav: true
 nav_order: 3
 ---
 
+## An Instrumented Utensil Handle for Stroke Rehabilitation — University of Utah OUR
+
+*Summer 2025*
+
+Office of Undergraduate Research abstract and symposium presentation for the instrumented utensil handle developed with the University of Utah NeuroRobotics Lab (115 × 33 mm, <80 g, 0–100 N grip force).
+
+- <a href="https://our.utah.edu/urs/an-instrumented-utensil-handle-for-functional-assessment-of-hand-performance-in-stroke-rehabilitation/" target="_blank">View the URS abstract</a>
+
+---
+
 ## Design That Heals: How a Student Designer, an Athlete-Engineer, and an Industry Leader Are Redefining What It Means to Build with Purpose
 
 *October 24, 2025*

@@ -6,146 +6,121 @@ nav: true
 nav_order: 2
 ---
 
-### 1. Autonomous remote sensing and surveying
+> Full interactive case studies with build photos, CAD/FEA views, and downloadable PDFs are on **[shriya-nedumaran.vercel.app/v2](https://shriya-nedumaran.vercel.app/v2)**.
 
-An autonomous robotics research project focused on developing systems for remote sensing and surveying applications. Part of the ARAS Lab team working on cutting-edge robotic technologies.
+### 1. Wireless taVNS Biostimulant Earbud (Caltech Gao Group / FSRI)
 
-| Role | Methods | Impact |
-|------|---------|--------|
-| Research team member | Autonomous navigation algorithms and sensor fusion | Contributed to ARAS Lab's cutting-edge robotic technologies for remote sensing applications |
+Co-developed a self-contained wireless earbud pairing BLE audio streaming with controllable biphasic transcutaneous auricular vagus nerve stimulation (0–5 mA, 32 V boost rail) to offset motion sickness under a <$200 prototype BOM.
 
-<br/>
+| Role | Methods | Measured Results |
+|------|---------|------------------|
+| Undergraduate researcher (co-developer) | KiCad schematic + PCB, Phrozen 16K SLA resin housing, machined aluminum electrodes | 0.9 Ω (Al) vs. 165.0 kΩ graphite-silicone composite (~177,000× lower resistance, n=6); <$200 BOM |
+
 **Artifacts**:
-- <a href="https://www.aras-lab.club/team" target="_blank">Team page</a>
-<br/>
-<br/>
+- <a href="https://shriya-nedumaran.vercel.app/v2/projects/tavns-earbud" target="_blank" rel="noopener">Full case study &amp; photos ↗</a>
+- <a href="https://shriya-nedumaran.vercel.app/pdf/tavns-earbud-poster-1p.pdf" target="_blank" rel="noopener">FSRI poster (PDF, 1 p) ↗</a>
 
+---
 
-### 2. An instrumented handle for functional assessment of hand performance in stroke rehabilitation
+### 2. An Instrumented Handle for Stroke Rehabilitation (Utah NeuroRobotics Lab)
 
-A rehabilitation device designed to assess and improve hand function in stroke survivors. The instrumented handle measures grip strength, dexterity, and functional movements to provide objective data for therapeutic interventions.
+Utensil-sized instrumented handle (115 mm × 33 mm, <80 g) measuring 0–100 N grip force, thumb pinch, 3-axis acceleration, and Hall-effect orientation during feeding ADLs across three PCB spins.
 
-| Role | Methods | Impact |
-|------|---------|--------|
-| Lead designer | Force/IMU data pipeline in Python | Measures grip strength, dexterity, and functional movements to provide objective data for therapeutic interventions |
+| Role | Methods | Measured Results |
+|------|---------|------------------|
+| Research contributor (electronics & mechanical integration) | 3 PCB spins (to slim edge-mount board with test pads), 3D-printed internal spine, Python force/IMU pipeline | 115 × 33 mm, <80 g; 0–100 N range; 3 PCB iterations |
 
-<br/>
 **Artifacts**:
+- <a href="https://shriya-nedumaran.vercel.app/v2/projects/stroke-rehab-handle" target="_blank" rel="noopener">Full case study &amp; PCB gallery ↗</a>
 - <a href="{{ '/assets/pdf/project-2-artifact.pdf' | relative_url }}" target="_blank">Poster</a>
 - <a href="https://neurorobotics.ece.utah.edu/category/presentation/" target="_blank">Presentation</a>
-- <a href="https://our.utah.edu/urs/an-instrumented-utensil-handle-for-functional-assessment-of-hand-performance-in-stroke-rehabilitation/" target="_blank">Research publication</a>
-<br/>
-<br/>
+- <a href="https://our.utah.edu/urs/an-instrumented-utensil-handle-for-functional-assessment-of-hand-performance-in-stroke-rehabilitation/" target="_blank">Utah URS abstract</a>
 
-### 3. Reclaiming 7th Street: Designing Reconfigurable Housing, Economic Prosperity, and Community Equity
+---
 
-An urban design project focused on creating reconfigurable housing solutions that promote economic prosperity and community equity. The project explores innovative housing models that can adapt to changing community needs.
+### 3. Soft Supernumerary Robotic Limb (SRL) for Human Augmentation
 
-| Role | Methods | Impact |
-|------|---------|--------|
-| Design lead | Urban planning methodologies and community engagement | Explores innovative housing models that adapt to changing community needs |
+Wearable 9-segment Ecoflex 00-30 silicone continuum arm driven by 12 stepper motors on a 3D-printed torso backplate, using a Discrete Cosserat Rod path planner with vision and speech intention control.
 
-<br/>
+| Role | Methods | Measured Results |
+|------|---------|------------------|
+| Solo developer | Silicone elastomer molding, 12-stepper tendon drive, Discrete Cosserat Rod kinematics | 2.2 cm avg point error (8 trials); 0.03 s latency; 84% task completion; 16.1 lb system ($247 BOM); 92.4 lb peak tested payload (157 N) |
+
 **Artifacts**:
-- <a href="https://www.instructables.com/Reclaiming-7th-Street-Designing-Reconfigurable-Hou/" target="_blank">Instructables project</a>
-<br/>
-<br/>
+- <a href="https://shriya-nedumaran.vercel.app/v2/projects/soft-robotic-limb" target="_blank" rel="noopener">Full case study &amp; test data ↗</a>
+- <a href="{{ '/assets/pdf/project-5-artifact.pdf' | relative_url }}" target="_blank">Poster (8 pp)</a>
+- <a href="https://science-fair.org/database/project_awards.php?school_year=2425&schoolname=Leigh+High+School" target="_blank">Synopsys 2025 1st Award</a>
 
-### 4. Revisiting Stellar Systems J0946 and V723 Monocerotis: A Study of Mass Gap Black Hole
+---
 
-An astrophysics research project investigating mass gap black hole candidates in stellar systems. This study contributes to understanding the formation and evolution of black holes in the “mass gap” between neutron stars and traditional black holes.
+### 4. Drone Belly Mount for Hyperspectral Camera (SJSU ARAS Lab)
+
+Rigid two-part belly mount suspending a ~1.5 kg MicroHSI 410 hyperspectral camera straight-down beneath a DJI Matrice-class drone without blocking heat sinks, ports, or shifting CG off-axis.
+
+| Role | Methods | Measured Results |
+|------|---------|------------------|
+| Research contributor (CAD, FEA & 3D print) | SolidWorks L-bracket + cradle, heat-set inserts, ribbing, linear static FEA (ABS, 20 N load) | 2 print iterations; 1.59 MPa max plate stress / 1.24 MPa cradle stress; 0.015 mm max displacement; bench-fitted on airframe |
+
+**Artifacts**:
+- <a href="https://shriya-nedumaran.vercel.app/v2/projects/drone-hsi-mount" target="_blank" rel="noopener">Full case study &amp; FEA plots ↗</a>
+- <a href="https://www.aras-lab.club/team" target="_blank">ARAS Lab team page</a>
+
+---
+
+### 5. Reclaiming 7th Street: Reconfigurable Housing Prototype (Autodesk Make It Home)
+
+Modular West Oakland housing development drafted in AutoCAD, modeled in Fusion 360, and 3D-printed in PLA on a Bambu Lab X1E as an interlocking scale model — winner of Autodesk's **Grand Prize for Best Physical Prototype**.
 
 | Role | Methods | Impact |
 |------|---------|--------|
-| Research team member | Astrophysical data analysis and stellar system modeling | Contributes to understanding black hole formation in the mass gap between neutron stars and traditional black holes |
+| Solo designer & builder | AutoCAD floor plans, Fusion 360 modular assembly, Bambu Lab X1E PLA scale model | Grand Prize — Best Physical Prototype (Make It Home 2025); featured by Autodesk |
 
-<br/>
+**Artifacts**:
+- <a href="https://shriya-nedumaran.vercel.app/v2/projects/reclaiming-7th-street" target="_blank" rel="noopener">Case study &amp; 3D-print photos ↗</a>
+- <a href="https://www.instructables.com/Reclaiming-7th-Street-Designing-Reconfigurable-Hou/" target="_blank">Instructables build log (35 steps)</a>
+
+---
+
+### 6. HopeNest: Non-Electrical Neonatal Incubator
+
+Power-independent medical enclosure using paraffin phase-change material (PCM), polycarbonate/fiberglass insulation, and passive HEPA/carbon filtration to maintain 35–38 °C and 40–80% humidity for 3.5 hours ($103.60 BOM).
+
+| Role | Methods | Impact |
+|------|---------|--------|
+| Lead designer | Thermal PCM modeling, passive stack airflow, 4-hour environmental testing | National STEM Festival Champion (1 of 3 in CA) &amp; Autodesk Design &amp; Make Champion (1 of 2 of 8,000) |
+
+**Artifacts**:
+- <a href="{{ '/assets/pdf/project-6-artifact.pdf' | relative_url }}" target="_blank">Poster</a>
+- <a href="https://www.prnewswire.com/news-releases/explr-announces-top-student-innovators-named-national-stem-champions-302335311.html" target="_blank">PR Newswire</a>
+
+---
+
+### 7. VEX Drivetrain Testing, Bézier Autonomy & Pit Infrastructure (12478X)
+
+Built three full-width drivable testbeds (tank, X-drive, 6-motor mecanum) to pick the competition base, implemented a C++ odometry + Bézier field-centric planner, and engineered a 4-fan pit cooling PCB and 3D-printed powered transport cart.
+
+| Role | Methods | Impact |
+|------|---------|--------|
+| Co-founder, Captain, Designer & Programmer | Controlled A/B testbeds, C++ odometry/Bézier planner, custom fan PCB, Bambu FDM | Ranked 15th globally of 200,000+ teams; 2025 VEX World Amaze Award (1 of 10 of 15,000) |
+
+**Artifacts**:
+- <a href="https://shriya-nedumaran.vercel.app/v2/projects/vex-drivetrain-autonomy" target="_blank" rel="noopener">Drivetrain + Bézier case study ↗</a>
+- <a href="https://shriya-nedumaran.vercel.app/v2/projects/pit-rig-box-bot" target="_blank" rel="noopener">Pit Cooling Rig + Box Bot case study ↗</a>
+
+---
+
+### 8. Revisiting Stellar Systems J0946 and V723 Monocerotis (ASDRP)
+
+Astrophysics research study investigating mass-gap black hole candidates in binary systems (`arXiv:2412.06130`).
+
 **Artifacts**:
 - <a href="https://arxiv.org/abs/2412.06130" target="_blank">arXiv preprint</a>
 - <a href="https://www.asdrp.org/post/a-study-of-mass-gap-black-hole-candidates-by-the-downing-laboratory-at-asdrp" target="_blank">ASDRP publication</a>
-<br/>
-<br/>
 
-### 5. A Novel Supernumerary Robotic Limb for Human Augmentation
+---
 
-A soft robotics project developing a supernumerary robotic limb (SRL) that enhances human capabilities. The system utilizes soft robotic technologies, a tendon-actuated continuum arm, and a dual-layered control strategy for safe and intuitive human-robot interaction.
+### 9. Software & Assistive Apps (Elderlynk, Visionary, SafetyButton)
 
-| Role | Methods | Impact |
-|------|---------|--------|
-| Lead developer | Soft robotics design, tendon-actuated continuum arm, dual-layered control strategy | Won Saban Family Sponsored 1st Award ($1,500) at CSEF; demonstrates safe and intuitive human-robot interaction for human augmentation |
-
-<br/>
-**Artifacts**:
-- <a href="{{ '/assets/pdf/project-5-artifact.pdf' | relative_url }}" target="_blank">Poster</a>
-- <a href="https://csef.usc.edu/CSSF/History/2025/Awards/SponsoredAwards2025.pdf" target="_blank">Award documentation</a>
-<br/>
-
-{% details Press %}
-- <a href="https://csef.usc.edu/CSSF/History/2025/Awards/SponsoredAwards2025.pdf" target="_blank">CSEF Award Documentation</a>
-{% enddetails %}
-
-<br/>
-<br/>
-
-### 6. Neonatal Incubator
-
-A medical device designed to provide optimal environmental conditions for premature and critically ill newborns. This project won the National STEM Festival Championship, demonstrating innovative solutions for neonatal care in resource-limited settings.
-
-| Role | Methods | Impact |
-|------|---------|--------|
-| Lead designer | Medical device design, environmental control systems | Won National STEM Festival Championship; provides optimal environmental conditions for premature and critically ill newborns in resource-limited settings |
-
-<br/>
-**Artifacts**:
-- <a href="{{ '/assets/pdf/project-6-artifact.pdf' | relative_url }}" target="_blank">Poster</a>
-<br/>
-
-{% details Press %}
-- <a href="https://www.lelezard.com/en/news-21646804.html" target="_blank">Le Lézard News</a>
-- <a href="https://www.prnewswire.com/news-releases/explr-announces-top-student-innovators-named-national-stem-champions-302335311.html" target="_blank">PR Newswire</a>
-- <a href="https://fox40.com/business/press-releases/cision/20241218PH82954/explr-announces-top-student-innovators-named-national-stem-champions/" target="_blank">Fox40</a>
-{% enddetails %}
-<br/>
-<br/>
-
-### 7. Elderlynk
-
-A mobile application designed to enhance the well-being of elderly individuals by providing a platform for social connection, health monitoring, and access to essential services. The app aims to reduce feelings of isolation among seniors while promoting active, healthy lifestyles.
-
-| Role | Methods | Impact |
-|------|---------|--------|
-| Mobile app developer | React Native, health monitoring APIs, social networking features | Reduces isolation among seniors by providing social connection and health monitoring platform |
-
-<br/>
-**Artifacts**:
-- <a href="https://youtu.be/lgh_EQ8lhjA?si=IwfM8BaJ-piYb-3u" target="_blank">Demo video</a>
-<br/>
-<br/>
-
-### 8. Visionary
-
-An AI-powered image generation application that transforms user prompts and images into stunning artworks within seconds. Features include digital art creation, custom tattoo designs, photo transformations, professional logos, and home decor ideas.
-
-
-| Role | Methods | Impact |
-|------|---------|--------|
-| Full-stack developer | AI image generation APIs, React frontend, cloud deployment | Transforms user prompts into artworks within seconds for digital art, tattoos, logos, and home decor |
-
-<br/>
-**Artifacts**:
-- <a href="https://youtu.be/jJgJ5SNxIaE?si=b7riXCyYkV5D7Im1" target="_blank">Demo video</a>
-<br/>
-<br/>
-
-### 9. Safetybutton
-
-A personal safety mobile application that enables users to quickly alert emergency contacts with their precise location. The app features a panic button interface that ensures help is readily available, providing peace of mind and enhanced personal security.
-
-
-| Role | Methods | Impact |
-|------|---------|--------|
-| Mobile app developer | GPS tracking, emergency contact APIs, push notifications | Enables users to quickly alert emergency contacts with precise location for enhanced personal security |
-
-<br/>
-**Artifacts**:
-- <a href="https://youtu.be/PjY-H4DazVc?si=PwltJi5raUiDfjAm" target="_blank">Demo video</a>
+- **Elderlynk**: Senior health & social connection app (<a href="https://youtu.be/lgh_EQ8lhjA?si=IwfM8BaJ-piYb-3u" target="_blank">Demo video</a>)
+- **Visionary**: Hands-free eye-tracking + BCI communication web app (<a href="https://youtu.be/jJgJ5SNxIaE?si=b7riXCyYkV5D7Im1" target="_blank">Demo video</a>)
+- **SafetyButton**: Voice-triggered emergency alert app — Congressional App Challenge Winner CA-16 (<a href="https://youtu.be/PjY-H4DazVc?si=PwltJi5raUiDfjAm" target="_blank">Demo video</a>)
