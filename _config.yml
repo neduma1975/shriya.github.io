@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title: "Shriya Nedumaran"
-description: "Shriya Nedumaran — Mechanical Engineering @ Caltech (Class of 2030) · Robotics & Hardware Portfolio"
+description: "Shriya Nedumaran — Mechanical & Medical Engineering @ Caltech (Class of 2030) · Robotics & Hardware Portfolio"
 url: "https://shriyanedumaran.com/"
 baseurl: ""     # keep empty for user sites
 repository: "neduma1975/shriya.github.io"
@@ -151,6 +151,9 @@ disqus_shortname: al-folio # put your disqus shortname
 # -----------------------------------------------------------------------------
 
 collections:
+  builds:
+    output: true
+    permalink: /builds/:name/
   awards:
     output: true
     permalink: /awards/:name/

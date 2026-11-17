@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<div class="builds-shell">
+  <header class="builds-header">
+    <p class="builds-kicker">01 / Mechanical Portfolio</p>
+    <h1 class="builds-title">{{ page.title | default: "Builds, tested" }}</h1>
+    <p class="builds-subtitle">
+      {{ page.description | default: "Hardware, CAD, FEA, and robotics builds — prototypes, bench testing, and case studies." }}
+    </p>
+    <nav class="builds-lineup" aria-label="Build index">
+      {% for b in site.data.builds %}
+        <a class="builds-lineup__item" href="{{ '/builds/' | append: b.slug | append: '/' | relative_url }}">
+          <span class="builds-lineup__arrow" aria-hidden="true">▸</span> {{ b.title }}
+        </a>
+      {% endfor %}
+    </nav>
+  </header>
+
+  <section aria-label="Builds grid" class="builds-grid">
+    {% for b in site.data.builds %}
+      <article class="build-card">
+        <a href="{{ '/builds/' | append: b.slug | append: '/' | relative_url }}" aria-label="{{ b.title }}" class="build-card__media">
+          <img
+            src="{{ b.cover | relative_url }}"
+            alt="{{ b.title }} hardware prototype"
+            width="800"
+            height="450"
+            loading="{% if forloop.index <= 3 %}eager{% else %}lazy{% endif %}"
+          >
+        </a>
+        <h2 class="build-card__title">
+          <a href="{{ '/builds/' | append: b.slug | append: '/' | relative_url }}">{{ b.title }}</a>
+        </h2>
+        <p class="build-card__outcome">{{ b.outcome }}</p>
+        <div class="build-card__links">
+          <a href="{{ '/builds/' | append: b.slug | append: '/' | relative_url }}" class="build-card__cta">Case study →</a>
+          {% if b.artifacts and b.artifacts.size > 0 %}
+            {% assign first_art = b.artifacts[0] %}
+            {% if first_art.href contains '://' %}
+              {% assign art_href = first_art.href %}
+            {% else %}
+              {% assign art_href = first_art.href | relative_url %}
+            {% endif %}
+            <a href="{{ art_href }}" target="_blank" rel="noopener" class="build-card__artifact">{{ first_art.label }}↗</a>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </section>
+</div>

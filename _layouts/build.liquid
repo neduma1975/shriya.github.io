@@ -1,0 +1,139 @@
+---
+layout: default
+---
+{% assign b = site.data.builds | where: "slug", page.slug | first %}
+<div class="builds-shell builds-case">
+  {% if b %}
+    <div class="build-topbar">
+      <a href="{{ '/builds/' | relative_url }}" class="build-back">← Builds</a>
+    </div>
+
+    <header class="build-hero">
+      <p class="builds-kicker">{{ b.tags | join: " · " }}</p>
+      <h1 class="build-hero__title">{{ b.title }}</h1>
+
+      <div class="build-tldr">
+        <p class="build-tldr__label">TL;DR</p>
+        <p class="build-tldr__text">{{ b.tldr }}</p>
+        {% if b.artifacts and b.artifacts.size > 0 %}
+          <div class="build-tldr__links">
+            {% for a in b.artifacts %}
+              {% if a.href contains '://' %}
+                {% assign art_href = a.href %}
+              {% else %}
+                {% assign art_href = a.href | relative_url %}
+              {% endif %}
+              <a href="{{ art_href }}" target="_blank" rel="noopener">📄 {{ a.label }}↗</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+
+      <p class="build-outcome">✓ {{ b.outcome }}</p>
+      <p class="build-role">Role: {{ b.role }}</p>
+
+      <figure class="build-cover">
+        <img src="{{ b.cover | relative_url }}" alt="{{ b.title }} hardware prototype" width="1200" height="675">
+      </figure>
+
+      {% if b.gallery and b.gallery.size > 0 %}
+        <div class="build-gallery" role="list" aria-label="Build photos and CAD views">
+          {% for g in b.gallery %}
+            <a
+              href="{{ g | relative_url }}"
+              target="_blank"
+              rel="noopener"
+              role="listitem"
+              aria-label="{{ b.title }}: open full-size build photo {{ forloop.index }}"
+              class="build-gallery__item"
+            >
+              <img
+                src="{{ g | relative_url }}"
+                alt="{{ b.title }}: build photo {{ forloop.index }} of {{ b.gallery.size }}"
+                loading="lazy"
+              >
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </header>
+
+    <div class="build-sections">
+      <section aria-label="Problem" class="build-section">
+        <p class="builds-kicker">01 / Problem</p>
+        <div class="build-section__body">
+          <p>{{ b.problem }}</p>
+        </div>
+      </section>
+
+      <section aria-label="Design process" class="build-section">
+        <p class="builds-kicker">02 / Design process</p>
+        <div class="build-section__body">
+          <ol class="build-process">
+            {% for step in b.process %}
+              <li>{{ step }}</li>
+            {% endfor %}
+          </ol>
+        </div>
+      </section>
+
+      <section aria-label="Build" class="build-section">
+        <p class="builds-kicker">03 / Build</p>
+        <div class="build-section__body">
+          <p>{{ b.build }}</p>
+        </div>
+      </section>
+
+      <section aria-label="Testing &amp; results" class="build-section">
+        <p class="builds-kicker">04 / Testing &amp; results</p>
+        <div class="build-section__body">
+          <div class="build-metrics">
+            {% for t in b.testing %}
+              {% assign trimmed = t.value | strip %}
+              {% if trimmed != "" %}
+                <div class="build-metric">
+                  <div class="build-metric__label">{{ t.metric }}</div>
+                  <div class="build-metric__value">{{ t.value }}</div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="What I learned" class="build-section">
+        <p class="builds-kicker">05 / What I learned</p>
+        <div class="build-section__body">
+          <p class="build-learned">{{ b.learned }}</p>
+        </div>
+      </section>
+
+      {% if b.video or b.model or b.artifacts.size > 0 %}
+        <section aria-label="Source" class="build-section">
+          <p class="builds-kicker">06 / Source</p>
+          <div class="build-section__body">
+            <ul class="build-sources">
+              {% if b.video %}
+                <li>🎬 <a href="{{ b.video }}" target="_blank" rel="noopener">Demo video↗</a></li>
+              {% endif %}
+              {% for a in b.artifacts %}
+                {% if a.href contains '://' %}
+                  {% assign art_href = a.href %}
+                {% else %}
+                  {% assign art_href = a.href | relative_url %}
+                {% endif %}
+                <li>📄 <a href="{{ art_href }}" target="_blank" rel="noopener">{{ a.label }}↗</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+      {% endif %}
+    </div>
+
+    <div class="build-bottom">
+      <a href="{{ '/builds/' | relative_url }}" class="build-back">← all builds</a>
+    </div>
+  {% else %}
+    <p>Build not found. <a href="{{ '/builds/' | relative_url }}">Return to all builds</a>.</p>
+  {% endif %}
+</div>

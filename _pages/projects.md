@@ -3,10 +3,10 @@ layout: page
 title: Projects
 permalink: /projects/
 nav: true
-nav_order: 2
+nav_order: 3
 ---
 
-> Full interactive case studies with build photos, CAD/FEA views, and downloadable PDFs are on **[shriya-nedumaran.vercel.app/v2](https://shriya-nedumaran.vercel.app/v2)**.
+> Visual case studies with build photos, CAD/FEA views, and downloadable PDFs are on **[Builds]({{ '/builds/' | relative_url }})**.
 
 ### 1. Wireless taVNS Biostimulant Earbud (Caltech Gao Group / FSRI)
 
@@ -17,8 +17,8 @@ Co-developed a self-contained wireless earbud pairing BLE audio streaming with c
 | Undergraduate researcher (co-developer) | KiCad schematic + PCB, Phrozen 16K SLA resin housing, machined aluminum electrodes | 0.9 Ω (Al) vs. 165.0 kΩ graphite-silicone composite (~177,000× lower resistance, n=6); <$200 BOM |
 
 **Artifacts**:
-- <a href="https://shriya-nedumaran.vercel.app/v2/projects/tavns-earbud" target="_blank" rel="noopener">Full case study &amp; photos ↗</a>
-- <a href="https://shriya-nedumaran.vercel.app/pdf/tavns-earbud-poster-1p.pdf" target="_blank" rel="noopener">FSRI poster (PDF, 1 p) ↗</a>
+- <a href="{{ '/builds/tavns-earbud/' | relative_url }}">Full case study &amp; photos →</a>
+- <a href="{{ '/assets/pdf/builds/tavns-earbud-poster-1p.pdf' | relative_url }}" target="_blank" rel="noopener">FSRI poster (PDF, 1 p) ↗</a>
 
 ---
 
@@ -31,7 +31,7 @@ Utensil-sized instrumented handle (115 mm × 33 mm, <80 g) measuring 0–100 N g
 | Research contributor (electronics & mechanical integration) | 3 PCB spins (to slim edge-mount board with test pads), 3D-printed internal spine, Python force/IMU pipeline | 115 × 33 mm, <80 g; 0–100 N range; 3 PCB iterations |
 
 **Artifacts**:
-- <a href="https://shriya-nedumaran.vercel.app/v2/projects/stroke-rehab-handle" target="_blank" rel="noopener">Full case study &amp; PCB gallery ↗</a>
+- <a href="{{ '/builds/stroke-rehab-handle/' | relative_url }}">Full case study &amp; PCB gallery →</a>
 - <a href="{{ '/assets/pdf/project-2-artifact.pdf' | relative_url }}" target="_blank">Poster</a>
 - <a href="https://neurorobotics.ece.utah.edu/category/presentation/" target="_blank">Presentation</a>
 - <a href="https://our.utah.edu/urs/an-instrumented-utensil-handle-for-functional-assessment-of-hand-performance-in-stroke-rehabilitation/" target="_blank">Utah URS abstract</a>
@@ -47,7 +47,7 @@ Wearable 9-segment Ecoflex 00-30 silicone continuum arm driven by 12 stepper mot
 | Solo developer | Silicone elastomer molding, 12-stepper tendon drive, Discrete Cosserat Rod kinematics | 2.2 cm avg point error (8 trials); 0.03 s latency; 84% task completion; 16.1 lb system ($247 BOM); 92.4 lb peak tested payload (157 N) |
 
 **Artifacts**:
-- <a href="https://shriya-nedumaran.vercel.app/v2/projects/soft-robotic-limb" target="_blank" rel="noopener">Full case study &amp; test data ↗</a>
+- <a href="{{ '/builds/soft-robotic-limb/' | relative_url }}">Full case study &amp; test data →</a>
 - <a href="{{ '/assets/pdf/project-5-artifact.pdf' | relative_url }}" target="_blank">Poster (8 pp)</a>
 - <a href="https://science-fair.org/database/project_awards.php?school_year=2425&schoolname=Leigh+High+School" target="_blank">Synopsys 2025 1st Award</a>
 
@@ -62,7 +62,7 @@ Rigid two-part belly mount suspending a ~1.5 kg MicroHSI 410 hyperspectral camer
 | Research contributor (CAD, FEA & 3D print) | SolidWorks L-bracket + cradle, heat-set inserts, ribbing, linear static FEA (ABS, 20 N load) | 2 print iterations; 1.59 MPa max plate stress / 1.24 MPa cradle stress; 0.015 mm max displacement; bench-fitted on airframe |
 
 **Artifacts**:
-- <a href="https://shriya-nedumaran.vercel.app/v2/projects/drone-hsi-mount" target="_blank" rel="noopener">Full case study &amp; FEA plots ↗</a>
+- <a href="{{ '/builds/drone-hsi-mount/' | relative_url }}">Full case study &amp; FEA plots →</a>
 - <a href="https://www.aras-lab.club/team" target="_blank">ARAS Lab team page</a>
 
 ---
@@ -76,7 +76,7 @@ Modular West Oakland housing development drafted in AutoCAD, modeled in Fusion 3
 | Solo designer & builder | AutoCAD floor plans, Fusion 360 modular assembly, Bambu Lab X1E PLA scale model | Grand Prize — Best Physical Prototype (Make It Home 2025); featured by Autodesk |
 
 **Artifacts**:
-- <a href="https://shriya-nedumaran.vercel.app/v2/projects/reclaiming-7th-street" target="_blank" rel="noopener">Case study &amp; 3D-print photos ↗</a>
+- <a href="{{ '/builds/reclaiming-7th-street/' | relative_url }}">Case study &amp; 3D-print photos →</a>
 - <a href="https://www.instructables.com/Reclaiming-7th-Street-Designing-Reconfigurable-Hou/" target="_blank">Instructables build log (35 steps)</a>
 
 ---
@@ -104,8 +104,8 @@ Built three full-width drivable testbeds (tank, X-drive, 6-motor mecanum) to pic
 | Co-founder, Captain, Designer & Programmer | Controlled A/B testbeds, C++ odometry/Bézier planner, custom fan PCB, Bambu FDM | Ranked 15th globally of 200,000+ teams; 2025 VEX World Amaze Award (1 of 10 of 15,000) |
 
 **Artifacts**:
-- <a href="https://shriya-nedumaran.vercel.app/v2/projects/vex-drivetrain-autonomy" target="_blank" rel="noopener">Drivetrain + Bézier case study ↗</a>
-- <a href="https://shriya-nedumaran.vercel.app/v2/projects/pit-rig-box-bot" target="_blank" rel="noopener">Pit Cooling Rig + Box Bot case study ↗</a>
+- <a href="{{ '/builds/vex-drivetrain-autonomy/' | relative_url }}">Drivetrain + Bézier case study →</a>
+- <a href="{{ '/builds/pit-rig-box-bot/' | relative_url }}">Pit Cooling Rig + Box Bot case study →</a>
 
 ---
 

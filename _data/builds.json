@@ -1,0 +1,380 @@
+[
+  {
+    "slug": "stroke-rehab-handle",
+    "title": "Instrumented Handle for Stroke Rehab",
+    "outcome": "3 PCB spins → 115 × 33 mm, <80 g instrumented utensil handle",
+    "tldr": "Utensil-sized rehab handle sensing 0–100 N grip force, tremor, and orientation — three PCB spins from a bulky 2-layer board to a slim edge-mount board with strain relief and test pads.",
+    "tags": [
+      "PCB",
+      "SolidWorks",
+      "FDM",
+      "Arduino",
+      "Python"
+    ],
+    "role": "Research contributor — electronics & mechanical integration lead (3 PCB spins, Utah NeuroRobotics Lab)",
+    "problem": "Rehab trials needed a utensil-sized handle (115 mm × 33 mm, <80 g) that senses grip force, stab force, tremor, and orientation in real time without the wiring harness failing under strain.",
+    "process": [
+      "PCB #1: packed 2-layer board (IMU, Hall, load cells, ADCs, BLE) — bulky, harness failures",
+      "PCB #2: stacked layout, dedicated connector block, cleaner analog front-end routing",
+      "PCB #3: slim edge-mount board inside the handle body, strain relief, breakout test pads"
+    ],
+    "build": "Paired load cells in finger channel, 2-axis thumb force element, in-line 3-axis accelerometer, Hall + two-magnet orientation. Sensor leads routed through a 3D-printed internal spine, hand-soldered, bench-tested, then potted and enclosed.",
+    "testing": [
+      {
+        "metric": "Dimensions & mass",
+        "value": "115 mm × 33 mm dia., <80 g"
+      },
+      {
+        "metric": "Grip force range",
+        "value": "0–100 N + 3-axis accel + Hall pose"
+      },
+      {
+        "metric": "PCB iterations",
+        "value": "3 spins (edge-mount + test pads)"
+      }
+    ],
+    "learned": "Analog routing and strain relief decide whether a wearable survives real-world clinical handling; test pads pay for themselves in trial debug time.",
+    "gallery": [
+      "/assets/img/builds/handle-pcb3.webp",
+      "/assets/img/builds/handle-spine.webp",
+      "/assets/img/builds/handle-pcb-cad.webp",
+      "/assets/img/builds/handle-sensor-plot.webp"
+    ],
+    "video": null,
+    "model": null,
+    "artifacts": [
+      {
+        "label": "Handle build PDF (3 pp)",
+        "href": "/assets/pdf/builds/stroke-rehab-handle-3pp.pdf"
+      },
+      {
+        "label": "Utah URS abstract",
+        "href": "https://our.utah.edu/urs/an-instrumented-utensil-handle-for-functional-assessment-of-hand-performance-in-stroke-rehabilitation/"
+      }
+    ],
+    "placeholder": false,
+    "cover": "/assets/img/builds/handle-cover.webp"
+  },
+  {
+    "slug": "soft-robotic-limb",
+    "title": "Soft Supernumerary Robotic Limb",
+    "outcome": "CSEF Saban 1st ($1,500); 2.2 cm point error, 92.4 lb peak payload",
+    "tldr": "Wearable 9-segment Ecoflex 00-30 silicone continuum arm with 12-stepper tendon drive and Discrete Cosserat Rod control — $247 BOM, 16.1 lb system, 2.2 cm avg point error across 8 trials, 92.4 lb max tested payload.",
+    "tags": [
+      "Soft robotics",
+      "CAD",
+      "Controls",
+      "Python"
+    ],
+    "role": "Solo developer — silicone molding, 12-motor tendon drive, Cosserat control",
+    "problem": "Extend human reach and load capacity with a low-cost, compliant wearable extra limb that moves smoothly around the torso without rigid exoskeleton bulk.",
+    "process": [
+      "Iterated from spine-vertebrae and origami-wing prototypes to 9-segment Ecoflex 00-30 silicone modules cast over fiber-reinforced actuators (FRAs) and rigid endcaps",
+      "Built 12-stepper (360°, 4 tendons × 3 modules) tendon drive on a 3D-printed PLA backplate + nylon torso harness",
+      "Implemented Discrete Cosserat Rod path planning with vision + speech intention control; validated across 45 randomized target points and 8-trial error tracking"
+    ],
+    "build": "Torso-mounted 9-segment silicone continuum arm driven by 12 stepper motors, Raspberry Pi controller, and 48 AA battery pack ($247 total materials).",
+    "testing": [
+      {
+        "metric": "Point error & latency",
+        "value": "2.2 cm avg (3% end-effector, 8 trials); 0.03 s"
+      },
+      {
+        "metric": "Control & reach",
+        "value": "84% task completion (74%/87% intent); +32% reach"
+      },
+      {
+        "metric": "System & peak payload",
+        "value": "16.1 lb ($247 BOM); 92.4 lb max @ 157 N tension"
+      }
+    ],
+    "learned": "Elastomer continuum segments paired with Discrete Cosserat Rod kinematics deliver repeatable 3D reachability without rigid-link pinch hazards.",
+    "gallery": [
+      "/assets/img/builds/srl-continuum-arm.webp",
+      "/assets/img/builds/srl-harness-actuators.webp",
+      "/assets/img/builds/srl-cosserat-sim.webp",
+      "/assets/img/builds/srl-results-data.webp"
+    ],
+    "video": null,
+    "model": null,
+    "artifacts": [
+      {
+        "label": "SRL poster (8 pp)",
+        "href": "/assets/pdf/builds/soft-robotic-limb-poster.pdf"
+      },
+      {
+        "label": "Synopsys 2025 1st Award",
+        "href": "https://science-fair.org/database/project_awards.php?school_year=2425&schoolname=Leigh+High+School"
+      }
+    ],
+    "placeholder": false,
+    "cover": "/assets/img/builds/srl-cover.webp"
+  },
+  {
+    "slug": "tavns-earbud",
+    "title": "Wireless taVNS Biostimulant Earbud",
+    "outcome": "Working prototype <$200; Al electrodes 0.9 Ω vs 165 kΩ composite",
+    "tldr": "Wireless earbud pairing BLE audio with biphasic taVNS stimulation for motion sickness — KiCad PCB, Phrozen 16K resin housing, machined aluminum electrodes (0.9 Ω vs 165.0 kΩ graphite-silicone, n=6), under $200 BOM.",
+    "tags": [
+      "PCB",
+      "KiCad",
+      "SLA",
+      "Machining",
+      "BLE",
+      "Testing"
+    ],
+    "role": "Co-developer (3-student FSRI team; Gao Research Group, Caltech) — KiCad PCB, housing, electrodes",
+    "problem": "Commercial and experimental taVNS devices are bulky, wired, and cannot simultaneously stream audio. Motion-sickness relief needed a self-contained wireless earbud targeting the concha and cymba concha.",
+    "process": [
+      "DigiKey component selection + datasheet verification; breadboard circuit validation",
+      "KiCad schematic + layout: USB-C charger, 3.3 V buck/boost, 32 V boost rail, IDAC, quad-switch (biphasic), BLE audio amp",
+      "Iterated Phrozen 16K resin housings to fix thin-wall/connector retention; pivoted from cast graphite-silicone electrodes to machined aluminum after 6-trial multimeter comparison"
+    ],
+    "build": "0–5 mA controllable biphasic constant-current stimulation with fail-safes; BLE audio streaming; SLA resin enclosure with machined aluminum concha/cymba-concha electrodes.",
+    "testing": [
+      {
+        "metric": "Electrode resistance",
+        "value": "0.9 Ω (Al) vs 165.0 kΩ composite (~177,000×, n=6)"
+      },
+      {
+        "metric": "Prototype BOM",
+        "value": "<$200 total (vs traditional clinical taVNS)"
+      },
+      {
+        "metric": "Safety ceiling",
+        "value": "0–5 mA biphasic constant-current, protected"
+      }
+    ],
+    "learned": "Electrode contact impedance dominated system feasibility — quantitative n=6 resistance testing forced an early pivot off composite silicone.",
+    "gallery": [
+      "/assets/img/builds/earbud-worn-sm.webp",
+      "/assets/img/builds/earbud-housing-sm.webp",
+      "/assets/img/builds/earbud-pcb-3d.webp",
+      "/assets/img/builds/earbud-electrode-chart.webp"
+    ],
+    "video": null,
+    "model": null,
+    "artifacts": [
+      {
+        "label": "FSRI poster (1 p)",
+        "href": "/assets/pdf/builds/tavns-earbud-poster-1p.pdf"
+      }
+    ],
+    "placeholder": false,
+    "cover": "/assets/img/builds/earbud-cover.webp"
+  },
+  {
+    "slug": "drone-hsi-mount",
+    "title": "Drone Belly Mount for Hyperspectral Camera",
+    "outcome": "2 CAD/FEA iterations; 1.59 MPa max stress at 20 N for 1.5 kg camera",
+    "tldr": "Belly mount hanging a 1.5 kg MicroHSI 410 hyperspectral camera from a DJI Matrice-class drone — two print iterations, SolidWorks FEA at 20 N (1.59 MPa max stress, 0.015 mm displacement), bench-fitted on drone.",
+    "tags": [
+      "CAD",
+      "SolidWorks",
+      "FDM",
+      "FEA",
+      "Tolerancing"
+    ],
+    "role": "CAD, FEA & 3D-print lead — SJSU ARAS Lab (autonomous remote sensing team)",
+    "problem": "Mount a ~1.5 kg (14.7 N) MicroHSI 410 hyperspectral camera straight-down (no gimbal) onto the DJI Matrice's damped belly plate without blocking heat sinks, ports, or markings or shifting CG off-axis.",
+    "process": [
+      "CADed an L-bracket cradle and base plate in SolidWorks around exact camera envelope, adding draft, fillets, relief cuts, and heat-set inserts",
+      "Iter 1 (PLA/PETG): physical fit check exposed rear screw-boss interference + lug hole misalignment → shortened body ~1/8 in, added camera pocket, reprinted at 20% gyroid",
+      "Iter 2: thickened mounting tabs and base plate, switched to ribbing over infill, and ran SolidWorks linear static FEA (ABS, 20 N load) on both plate and cradle"
+    ],
+    "build": "Two-part printed cradle and base plate with heat-set inserts; bolt-pattern, port-clearance, and CG verified physically on the DJI Matrice airframe.",
+    "testing": [
+      {
+        "metric": "Camera & FEA load",
+        "value": "~1.5 kg (14.7 N static) tested at 20 N"
+      },
+      {
+        "metric": "FEA results (ABS)",
+        "value": "1.59 MPa plate / 1.24 MPa cradle, 0.015 mm disp."
+      },
+      {
+        "metric": "Current status",
+        "value": "Bench-fitted on DJI body; >30 N pull & flight tests next"
+      }
+    ],
+    "learned": "Isotropic linear FEA misses infill geometry and layer-to-layer anisotropy — physical >30 N load testing is required before flight sign-off.",
+    "gallery": [
+      "/assets/img/builds/drone-belly-plate.webp",
+      "/assets/img/builds/drone-fea-plate.webp",
+      "/assets/img/builds/drone-fea-cradle.webp",
+      "/assets/img/builds/drone-iter1-fit.webp"
+    ],
+    "video": null,
+    "model": null,
+    "artifacts": [
+      {
+        "label": "Drone mount PDF (4 pp)",
+        "href": "/assets/pdf/builds/drone-hsi-mount-4pp.pdf"
+      },
+      {
+        "label": "SJSU ARAS Lab team",
+        "href": "https://www.aras-lab.club/team"
+      }
+    ],
+    "placeholder": false,
+    "cover": "/assets/img/builds/drone-cover.webp"
+  },
+  {
+    "slug": "vex-drivetrain-autonomy",
+    "title": "VEX Drivetrain Testing + Bézier Autonomy",
+    "outcome": "6-motor mecanum selected from 3 testbeds; field-centric odometry planner",
+    "tldr": "Built three identical drivable testbeds (tank vs X-drive vs 6-motor mecanum) to compare sprint speed and current-logged push force, picked mecanum, then drove it with a C++ odometry + Bézier planner.",
+    "tags": [
+      "Robotics",
+      "CAD",
+      "C++",
+      "Testing",
+      "Path planning"
+    ],
+    "role": "Co-founder, Captain, Designer & Programmer — 9-member team (Bobaionics 12478X)",
+    "problem": "Pick a drivetrain base that balances cycle speed and scrum pushing force, then execute simultaneous translate-and-rotate autonomous routines without stop-turn-drive penalties.",
+    "process": [
+      "Built three full-width testbeds: 6-wheel tank, X-drive, 6-motor mecanum (same brain/IMU placement for equal weight distribution)",
+      "Timed straight-line sprints under load and ran barrier-push tests with motor current logging to compare usable stall force",
+      "Integrated X/Y tracking wheels → continuous X/Y/θ pose → Bézier-curve planner with rolling lookahead; tuned in jerry.io sim before real-robot drift correction"
+    ],
+    "build": "6-motor mecanum chassis with 45° roller geometry and traction tuning; orthogonal X/Y odometry wheel stack; C++ field-centric waypoint routines around stakes, rings, and drop-off.",
+    "testing": [
+      {
+        "metric": "Testbeds compared",
+        "value": "3 (tank, X-drive, 6-motor mecanum)"
+      },
+      {
+        "metric": "Selected base",
+        "value": "6-motor mecanum (strafe + competitive push)"
+      },
+      {
+        "metric": "Season standing",
+        "value": "15th of 200,000+ teams; Skills 17th of 833"
+      }
+    ],
+    "learned": "Controlled A/B testbeds settle drivetrain debates fast; sim-first Bézier path tuning reduced on-field autonomous debugging.",
+    "gallery": [
+      "/assets/img/builds/vex-mecanum-testbed.webp",
+      "/assets/img/builds/vex-tank-testbed.webp",
+      "/assets/img/builds/vex-bezier-planner.webp",
+      "/assets/img/builds/vex-cad.webp"
+    ],
+    "video": null,
+    "model": null,
+    "artifacts": [
+      {
+        "label": "Drivetrain & autonomy PDF (2 pp)",
+        "href": "/assets/pdf/builds/vex-drivetrain-autonomy-2pp.pdf"
+      }
+    ],
+    "placeholder": false,
+    "cover": "/assets/img/builds/vex-cover.webp"
+  },
+  {
+    "slug": "reclaiming-7th-street",
+    "title": "Reclaiming 7th Street: Reconfigurable Housing Prototype",
+    "outcome": "Autodesk Make It Home Grand Prize (Best Physical Prototype); Bambu X1E model",
+    "tldr": "Modular West Oakland housing development drafted in AutoCAD, modeled in Fusion 360, and 3D-printed in PLA on a Bambu Lab X1E as an interlocking scale model — won Autodesk's Grand Prize for Best Physical Prototype.",
+    "tags": [
+      "CAD",
+      "Fusion 360",
+      "AutoCAD",
+      "FDM",
+      "Prototyping"
+    ],
+    "role": "Solo designer & builder — AutoCAD floor plans, Fusion 360 assembly, 3D-printed prototype",
+    "problem": "Reimagine an underinvested West Oakland corridor into reconfigurable, community-owned housing with commercial ground floors and prove modular assembly logic physically.",
+    "process": [
+      "Drafted commercial, communal, and swappable apartment-cube floor plans in AutoCAD tailored to West Oakland's 7th Street site and transit bridge",
+      "Modeled multi-story structural supports, vertical gardens, greywater loops, and under-bridge VAWTs in Fusion 360",
+      "Sliced modular unit batches in Bambu Studio and printed PLA prototypes on a Bambu Lab X1E (218 °C nozzle / 55 °C bed); tuned mating tolerances with flush cutters, 320-grit sanding, and needle files"
+    ],
+    "build": "Multi-level 3D-printed PLA scale model with removable/reconfigurable residential cubes, commercial podium, cyanoacrylate/two-part epoxy joints, and vertical-garden foliage.",
+    "testing": [
+      {
+        "metric": "Award",
+        "value": "Grand Prize — Best Physical Prototype (Autodesk 2025)"
+      },
+      {
+        "metric": "Print process",
+        "value": "Bambu Lab X1E (PLA), needle-file joint fit check"
+      },
+      {
+        "metric": "Build documentation",
+        "value": "35-step Instructables log + AutoCAD/Fusion 360 drawings"
+      }
+    ],
+    "learned": "Printing individual modular cubes forced crisp mating clearances early — physical fit checks caught joint tolerances that CAD renders hide.",
+    "gallery": [
+      "/assets/img/builds/reclaiming-modules.webp",
+      "/assets/img/builds/reclaiming-cad.webp",
+      "/assets/img/builds/reclaiming-printing.webp",
+      "/assets/img/builds/reclaiming-drawings.webp"
+    ],
+    "video": null,
+    "model": null,
+    "artifacts": [
+      {
+        "label": "Instructables build log (35 steps)",
+        "href": "https://www.instructables.com/Reclaiming-7th-Street-Designing-Reconfigurable-Hou/"
+      },
+      {
+        "label": "Autodesk feature: Design That Heals",
+        "href": "https://www.autodesk.com/blogs/construction/design-that-heals-how-a-student-designer-an-athlete-engineer-and-an-industry-leader-are-redefining-what-it-means-to-build-with-purpose/"
+      }
+    ],
+    "placeholder": false,
+    "cover": "/assets/img/builds/reclaiming-cover.webp"
+  },
+  {
+    "slug": "pit-rig-box-bot",
+    "title": "Pit Cooling Rig + Box Bot",
+    "outcome": "4-fan cooling PCB + powered cart moving 30+ lb robot",
+    "tldr": "Pit-side reliability hardware: a 4-fan high-static-pressure cooling rig with custom fan-control PCB plus a modular 3D-printed powered cart that hauls the 30+ lb competition robot.",
+    "tags": [
+      "CAD",
+      "FDM",
+      "PCB",
+      "Robotics"
+    ],
+    "role": "Designer & builder — pit cooling rig, fan-control PCB & powered cart (Bobaionics 12478X)",
+    "problem": "Drivetrain motors overheated between back-to-back tournament matches, and hauling a 30+ lb competition robot across large venues risked frame damage and drops.",
+    "process": [
+      "Modeled airflow for 4 high-static-pressure PC fans in a custom VEX frame; routed housing panels and laid out a dedicated fan-control schematic and PCB",
+      "CADed and 3D-printed a modular box-bot cart with integrated wiring channels, DeWalt battery bay, controller mount, removable access panels, and quick-grab handles"
+    ],
+    "build": "Custom fan-control PCB powering 4 high-static-pressure pit fans under a drop-on robot deck; multi-part 3D-printed cart chassis with impact brackets and cable strain relief.",
+    "testing": [
+      {
+        "metric": "Cooling hardware",
+        "value": "4 high-static-pressure fans + custom PCB"
+      },
+      {
+        "metric": "Cart payload",
+        "value": "30+ lb competition robot"
+      },
+      {
+        "metric": "Field serviceability",
+        "value": "Removable access panels + strain relief"
+      }
+    ],
+    "learned": "Pit infrastructure is a force multiplier — active between-match cooling and rugged transport directly protect match consistency.",
+    "gallery": [
+      "/assets/img/builds/pit-cooling-fans.webp",
+      "/assets/img/builds/pit-cooling-housing.webp",
+      "/assets/img/builds/pit-fan-pcb.webp",
+      "/assets/img/builds/pit-box-bot.webp"
+    ],
+    "video": null,
+    "model": null,
+    "artifacts": [
+      {
+        "label": "Pit rig & Box Bot PDF (2 pp)",
+        "href": "/assets/pdf/builds/pit-rig-box-bot-2pp.pdf"
+      }
+    ],
+    "placeholder": false,
+    "cover": "/assets/img/builds/pit-cover.webp"
+  }
+]

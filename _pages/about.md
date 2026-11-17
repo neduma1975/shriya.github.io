@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: First-year Mechanical Engineering @ Caltech · Class of 2030
+subtitle: First-year Mechanical &amp; Medical Engineering @ Caltech · Class of 2030
 social: true
 
 profile:
@@ -11,7 +11,7 @@ profile:
   image_circular: true
 ---
 
-> **New Hardware & Engineering Portfolio:** For full CAD, FEA, PCB, and test-data case studies plus my resume PDF, visit **[shriya-nedumaran.vercel.app/v2](https://shriya-nedumaran.vercel.app/v2)** ([Resume PDF](https://shriya-nedumaran.vercel.app/resume.pdf)).
+> **Mechanical Engineering Portfolio:** For tested hardware, CAD/FEA, PCB, and robotics case studies, visit **[Builds]({{ '/builds/' | relative_url }})** ([Resume PDF]({{ '/assets/pdf/resume.pdf' | relative_url }})).
 
 <a href="https://www.instructables.com/contest/makeithome2025/" target="_blank" rel="noopener noreferrer">
   <img src="{{ '/assets/img/instructables-logo-2023.svg' | relative_url }}" alt="Autodesk Make It Home Logo" style="height: 52px; vertical-align: middle; margin-right: 8px;">
@@ -23,7 +23,7 @@ profile:
   2026 Coca-Cola Scholar Semifinalist
 </a>
 
-I am a first-year **Mechanical Engineering** student at **Caltech (Class of 2030)** focused on human-centered hardware: soft robotics, rehabilitation instrumentation, wearables, and autonomous robotic systems. Seeking **Summer 2027 internships** in mechanical design, prototyping, manufacturing, and robotics R&D.
+I am a first-year **Mechanical &amp; Medical Engineering** student at **Caltech (Class of 2030)** focused on human-centered hardware: soft robotics, rehabilitation instrumentation, wearables, and autonomous robotic systems. Seeking **Summer 2027 internships** in mechanical design, prototyping, manufacturing, and robotics R&D.
 
 ## Research & Engineering Experience
 
