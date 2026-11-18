@@ -132,6 +132,7 @@ html[data-theme="dark"] .builds-shell {
 .build-card__media img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   transition: transform 0.25s ease;
@@ -303,6 +304,7 @@ html[data-theme="dark"] .builds-shell {
 .build-cover img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
@@ -336,6 +338,7 @@ html[data-theme="dark"] .builds-shell {
 .build-gallery__item img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 3;
   object-fit: contain;
 }
